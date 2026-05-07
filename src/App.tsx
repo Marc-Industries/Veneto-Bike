@@ -384,24 +384,32 @@ export default function App() {
       {/* Attractions */}
       <section className="py-24 bg-white relative">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="bg-primary-navy rounded-[3rem] p-12 md:p-20 text-white overflow-hidden relative">
-            <div className="relative z-10 max-w-3xl">
-              <span className="text-accent-yellow font-bold uppercase tracking-widest text-xs mb-4 block">Coś więcej niż kolarstwo</span>
-              <h2 className="text-5xl font-bold mb-8">Atrakcje i Integracja</h2>
-              <div className="grid sm:grid-cols-2 gap-10">
-                {ATTRACTIONS.map((attr, idx) => (
-                  <div key={idx} className="space-y-4">
-                    <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
-                      <attr.icon className="text-accent-yellow w-6 h-6" />
+          <div className="bg-primary-navy rounded-[3rem] p-10 md:p-16 text-white overflow-hidden">
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="relative z-10">
+                <span className="text-accent-yellow font-bold uppercase tracking-widest text-xs mb-4 block">Coś więcej niż kolarstwo</span>
+                <h2 className="text-5xl font-bold mb-8">Atrakcje i Integracja</h2>
+                <div className="grid sm:grid-cols-2 gap-10">
+                  {ATTRACTIONS.map((attr, idx) => (
+                    <div key={idx} className="space-y-4">
+                      <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
+                        <attr.icon className="text-accent-yellow w-6 h-6" />
+                      </div>
+                      <h4 className="text-xl font-bold">{attr.title}</h4>
+                      <p className="text-white/50 text-sm">{attr.desc}</p>
                     </div>
-                    <h4 className="text-xl font-bold">{attr.title}</h4>
-                    <p className="text-white/50 text-sm">{attr.desc}</p>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
-            <div className="absolute top-0 right-0 h-full w-2/5 opacity-40 hidden lg:block">
-              <img src="https://i.ibb.co/V03H1V7j/Gemini-Generated-Image-xopmjxopmjxopmjx.png" alt="Atrakcje Veneto" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+              <div className="hidden lg:block relative group">
+                <div className="absolute inset-0 bg-accent-yellow/20 blur-3xl rounded-full scale-75 group-hover:scale-90 transition-transform duration-700" />
+                <img 
+                  src="https://i.ibb.co/V03H1V7j/Gemini-Generated-Image-xopmjxopmjxopmjx.png" 
+                  alt="Atrakcje Veneto" 
+                  className="relative z-10 w-full h-auto rounded-2xl shadow-2xl border border-white/10" 
+                  referrerPolicy="no-referrer" 
+                />
+              </div>
             </div>
           </div>
         </div>
