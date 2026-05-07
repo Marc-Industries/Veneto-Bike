@@ -155,16 +155,14 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-primary-navy">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=2670" 
+            src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&q=80&w=2670" 
             alt="Hero background" 
-            className="w-full h-full object-cover opacity-50"
-            style={{ filter: 'brightness(0.6) contrast(1.1)' }}
+            className="w-full h-full object-cover scale-110 brightness-[0.5]"
             referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/40 via-transparent to-primary-navy/80" />
         </div>
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 text-center text-white">
           <motion.div
