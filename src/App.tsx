@@ -47,50 +47,50 @@ interface Place {
 const PROGRAM: ProgramDay[] = [
   {
     day: 1,
-    title: "Przyjazd & Bassano del Grappa",
-    description: "Lądowanie w sercu Veneto i zakwaterowanie.",
-    details: ["Transfer z lotniska/Polski", "Odprawa techniczna i dopasowanie rowerów", "Kolacja powitalna w Bassano"],
+    title: "Bassano del Grappa – Baza wyprawy",
+    description: "Przyjazd do serca Veneto i zakwaterowanie u podnóża Alp.",
+    details: ["Transfer z Polski do Bassano del Grappa", "Zakwaterowanie w hotelu i odprawa techniczna", "Powitalna kolacja w historycznym centrum"],
   },
   {
     day: 2,
-    title: "Szlakiem Prosecco",
-    description: "Malownicze winnice i pagórki Asolo.",
+    title: "Perła Wzgórz – Asolo",
+    description: "Szlakiem Prosecco przez malownicze pagórki i winnice.",
     distance: "45 km",
-    details: ["Przejazd przez winnice", "Degustacja lokalnych produktów", "Wieczorna analiza trasy"],
+    details: ["Podjazd do średniowiecznego Asolo", "Degustacja lokalnych specjałów w winnicy", "Nagrywanie pierwszych ujęć z trasy"],
   },
   {
     day: 3,
-    title: "Treviso – Miasto Kanałów",
-    description: "Płaska, szybka trasa do historycznego centrum.",
+    title: "Treviso – Miasto Historii",
+    description: "Szybka trasa wzdłuż rzeki w stronę kolebki Tiramisu.",
     distance: "60 km",
-    details: ["Kawa na Piazza dei Signori", "Powrót pociągiem lub rowerem", "Wspólne nagrywanie materiałów wideo"],
+    details: ["Przejazd przez urokliwe kanały Treviso", "Pauza na Piazza dei Signori", "Analiza techniki jazdy i wieczorna integracja"],
   },
   {
     day: 4,
-    title: "Serce Regionu Veneto",
-    description: "Odkrywanie ukrytych perełek architektury.",
-    distance: "55 km",
-    details: ["Wille Palladiańskie", "Lokalne targowiska", "Trening interwałowy dla chętnych"],
+    title: "Woda i Historia – Venezia",
+    description: "Magia laguny i wyjątkowe zakończenie dnia w sercu kanałów.",
+    distance: "50 km",
+    details: ["Dojazd rowerowy w okolice laguny", "Gra miejska w labiryncie weneckich uliczek", "Rejs łodzią po Canale Grande"],
   },
   {
     day: 5,
-    title: "Woda i Historia",
-    description: "Wyprawa w stronę laguny.",
-    distance: "50 km",
-    details: ["Trasy wzdłuż rzeki Brenta", "Postój w Marostica", "Wieczorna integracja"],
+    title: "Serce Regionu – Wille Veneto",
+    description: "Odkrywanie renesansowej architektury i ukrytych perełek.",
+    distance: "55 km",
+    details: ["Trasa śladem wille Palladiańskich", "Przejazd przez historyczne miasteczka regionu", "Regeneracja przed finałowym etapem"],
   },
   {
     day: 6,
     title: "Monte Grappa – Królewski Etap",
-    description: "Finałowy podjazd dla najwytrwalszych.",
+    description: "Legendarny podjazd i finałowe wyzwanie na szczycie.",
     distance: "30 km (górski)",
-    details: ["Kultowy podjazd Giro d'Italia", "Opcjonalny skok na paralotni", "Uroczysta kolacja finałowa"],
+    details: ["Zdobądź szczyt Monte Grappa (1775 m)", "Opcjonalnie: Lot paralotnią dla chętnych", "Uroczysta kolacja pożegnalna"],
   },
   {
     day: 7,
     title: "Powrót do Polski",
-    description: "Ostatnie espresso i pożegnanie z Włochami.",
-    details: ["Pakowanie sprzętu", "Transfer powrotny", "Wspólne zdjęcia pamiątkowe"],
+    description: "Ostatnie espresso i bezpieczna podróż do domu.",
+    details: ["Pakowanie sprzętu i rowerów", "Wspólne pamiątkowe zdjęcie grupy", "Transfer powrotny (Trasa do Polski)"],
   },
 ];
 
@@ -337,7 +337,15 @@ export default function App() {
             <div className="relative">
               <div className="aspect-square rounded-[2rem] overflow-hidden">
                 <img 
-                  src={`https://images.unsplash.com/photo-1541625602330-2277a1cd13a1?auto=format&fit=crop&q=80&w=1200`} 
+                  src={[
+                    "https://www.veneto.info/wp-content/uploads/sites/114/bassano-del-grappa-hd.jpg",
+                    "https://ita.travel/user/blogimg/leto/asolo_veneto_aerial-view.jpg",
+                    "https://italien.expert/wp-content/uploads/2025/03/Treviso-Venetien-Italien-Foto-%C2%A9-Italien.expert-by-Canva.com-9.jpg",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGZtNQ1YEeA9KMfgJkTFf_EYHO1-MKvnWwdg&s",
+                    "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=1200",
+                    "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjb_Cc_gHpI4ibDX77N4UG_csmrdcwmxRiFF73LPPl1Yy59OZeUM9VkT8cwPKFIgrDPpTfc853BdGNkVM6HLd3QXAoURMqeJr7P_fXk614uwbv_SwNI-v6MrHBikevDp5jIUVpkf4bPFz6A/s1600/Montegrappa.jpg",
+                    "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&q=80&w=1200"
+                  ][activeDay - 1]} 
                   alt="Route preview" 
                   className="w-full h-full object-cover opacity-80"
                   referrerPolicy="no-referrer"
