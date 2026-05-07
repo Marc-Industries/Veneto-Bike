@@ -98,7 +98,7 @@ const PLACES: Place[] = [
   { name: "Bassano del Grappa", description: "Nasza baza u podnóża Alp, słynąca z historycznego drewnianego mostu i unikalnej atmosfery.", image: "https://www.veneto.info/wp-content/uploads/sites/114/bassano-del-grappa-hd.jpg" },
   { name: "Asolo", description: "Miasto stu horyzontów, perła architektury renesansowej położona na malowniczych wzgórzach.", image: "https://ita.travel/user/blogimg/leto/asolo_veneto_aerial-view.jpg" },
   { name: "Treviso", description: "Urokliwe kanały, historyczne mury i kolebka najsłynniejszego włoskiego deseru – tiramisu.", image: "https://italien.expert/wp-content/uploads/2025/03/Treviso-Venetien-Italien-Foto-%C2%A9-Italien.expert-by-Canva.com-9.jpg" },
-  { name: "Venezia", description: "Jedno z najbardziej unikalnych miast świata. Finał trasy z rejsem łodzią po kanałach.", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGZtNQ1YEeA9KMfgJkTFf_EYHO1-MKvnWwdg&s" },
+  { name: "Venezia", description: "Jedno z najbardziej unikalnych miast świata. Finał trasy z rejsem łodzią po kanałach.", image: "https://www.beescover.com/wp-content/uploads/2020/03/cosa-vedere-a-venezia-1195x800.jpg" },
   { name: "Monte Grappa", description: "Monumentalny szczyt (1775 m n.p.m.) – święta góra kolarzy z panoramą sięgającą Adriatyku.", image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjb_Cc_gHpI4ibDX77N4UG_csmrdcwmxRiFF73LPPl1Yy59OZeUM9VkT8cwPKFIgrDPpTfc853BdGNkVM6HLd3QXAoURMqeJr7P_fXk614uwbv_SwNI-v6MrHBikevDp5jIUVpkf4bPFz6A/s1600/Montegrappa.jpg" },
 ];
 
@@ -341,7 +341,7 @@ export default function App() {
                     "https://www.veneto.info/wp-content/uploads/sites/114/bassano-del-grappa-hd.jpg",
                     "https://ita.travel/user/blogimg/leto/asolo_veneto_aerial-view.jpg",
                     "https://italien.expert/wp-content/uploads/2025/03/Treviso-Venetien-Italien-Foto-%C2%A9-Italien.expert-by-Canva.com-9.jpg",
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGZtNQ1YEeA9KMfgJkTFf_EYHO1-MKvnWwdg&s",
+                    "https://www.beescover.com/wp-content/uploads/2020/03/cosa-vedere-a-venezia-1195x800.jpg",
                     "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=1200",
                     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjb_Cc_gHpI4ibDX77N4UG_csmrdcwmxRiFF73LPPl1Yy59OZeUM9VkT8cwPKFIgrDPpTfc853BdGNkVM6HLd3QXAoURMqeJr7P_fXk614uwbv_SwNI-v6MrHBikevDp5jIUVpkf4bPFz6A/s1600/Montegrappa.jpg",
                     "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&q=80&w=1200"
