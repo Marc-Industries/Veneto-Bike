@@ -227,9 +227,9 @@ export default function App() {
                 bezpieczeństwo i wspólnota ludzi o podobnych celach.
               </p>
               
-              <div className="relative pt-8">
-                <div className="absolute inset-0 bg-accent-yellow/10 blur-3xl rounded-full scale-110 -z-10" />
-                <div className="rounded-[2rem] overflow-hidden shadow-xl border border-slate-100">
+              <div className="relative pt-8 flex justify-center lg:justify-start">
+                <div className="absolute inset-0 bg-accent-yellow/10 blur-3xl rounded-full scale-75 -z-10" />
+                <div className="rounded-2xl overflow-hidden shadow-xl border border-slate-100 max-w-[240px]">
                   <img 
                     src="https://i.ibb.co/ycnWg9pP/photo-6046383293944499604-y.jpg" 
                     alt="Veneto Bike Team" 
