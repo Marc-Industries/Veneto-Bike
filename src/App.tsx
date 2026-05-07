@@ -155,14 +155,16 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-primary-navy">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&q=80&w=2670" 
+            src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=2670" 
             alt="Hero background" 
-            className="w-full h-full object-cover scale-110 brightness-[0.5]"
+            className="w-full h-full object-cover opacity-50"
+            style={{ filter: 'brightness(0.6) contrast(1.1)' }}
             referrerPolicy="no-referrer"
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/40 via-transparent to-primary-navy/80" />
         </div>
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 text-center text-white">
           <motion.div
@@ -181,17 +183,17 @@ export default function App() {
               7 dni intensywnej wyprawy rowerowej przez serce północnych Włoch. 
               Sportowa pasja, luksusowe trasy i niezapomniane emocje.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-12">
               <button 
                 onClick={() => scrollTo('kontakt')}
-                className="bg-accent-yellow text-primary-navy px-10 py-4 rounded-full font-black text-lg hover:shadow-2xl hover:shadow-yellow-500/30 transition-all transform hover:-translate-y-1 group uppercase flex items-center gap-3"
+                className="bg-accent-yellow text-primary-navy px-12 py-5 rounded-full font-black text-lg hover:shadow-2xl hover:shadow-yellow-500/30 transition-all transform hover:-translate-y-1 group uppercase flex items-center gap-3"
               >
                 Zarezerwuj miejsce
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
               <button 
                 onClick={() => scrollTo('program')}
-                className="text-white border-2 border-white/30 px-10 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-primary-navy transition-all uppercase"
+                className="text-white border-2 border-white/30 px-12 py-5 rounded-full font-bold text-lg hover:bg-white hover:text-primary-navy transition-all uppercase"
               >
                 Zobacz program
               </button>
@@ -569,7 +571,7 @@ export default function App() {
                 <label className="text-xs font-bold uppercase tracking-widest text-slate-400">Wiadomość</label>
                 <textarea className="w-full px-5 py-4 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-accent-green outline-none transition-all min-h-[120px]" placeholder="Opowiedz nam o swoim doświadczeniu..." />
               </div>
-              <button className="w-full bg-primary-navy text-white py-5 rounded-xl font-bold uppercase tracking-widest hover:bg-slate-800 transition-all transform hover:scale-[1.02] active:scale-95 shadow-xl shadow-slate-900/10">
+              <button className="w-full bg-primary-navy text-white py-6 rounded-xl font-bold uppercase tracking-widest hover:bg-slate-800 transition-all transform hover:scale-[1.02] active:scale-95 shadow-xl shadow-slate-900/10 mt-4">
                 Wstępna rezerwacja
               </button>
               <p className="text-center text-[10px] text-slate-400 mt-4 uppercase font-medium">Przesłanie formularza nie stanowi wiążącej umowy.</p>
