@@ -231,7 +231,7 @@ export default function App() {
                 <div className="absolute inset-0 bg-accent-yellow/10 blur-3xl rounded-full scale-110 -z-10" />
                 <div className="rounded-[2rem] overflow-hidden shadow-xl border border-slate-100">
                   <img 
-                    src="https://web.telegram.org/0439a276-eb4e-4a64-bcbc-8ad89bf96090" 
+                    src="https://i.ibb.co/ycnWg9pP/photo-6046383293944499604-y.jpg" 
                     alt="Veneto Bike Team" 
                     className="w-full h-auto object-cover"
                     referrerPolicy="no-referrer"
