@@ -400,8 +400,8 @@ export default function App() {
                 ))}
               </div>
             </div>
-            <div className="absolute top-0 right-0 h-full w-1/3 opacity-20 hidden lg:block">
-              <img src="https://images.unsplash.com/photo-1549444458-7e47bc480673?q=80&w=800" alt="Venice" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+            <div className="absolute top-0 right-0 h-full w-2/5 opacity-40 hidden lg:block">
+              <img src="https://i.ibb.co/V03H1V7j/Gemini-Generated-Image-xopmjxopmjxopmjx.png" alt="Atrakcje Veneto" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
             </div>
           </div>
         </div>
