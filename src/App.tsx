@@ -227,22 +227,15 @@ export default function App() {
                 bezpieczeństwo i wspólnota ludzi o podobnych celach.
               </p>
               
-              <div className="grid sm:grid-cols-2 gap-8">
-                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                  <div className="w-16 h-16 rounded-full overflow-hidden mb-4 bg-slate-200">
-                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&fit=crop" alt="Diana" referrerPolicy="no-referrer" />
-                  </div>
-                  <h4 className="font-bold text-xl mb-1 text-primary-navy">Diana Dąbrowska</h4>
-                  <p className="text-accent-green font-bold text-xs uppercase mb-3">Organizator & Przewodnik</p>
-                  <p className="text-sm text-slate-500">Doświadczona pasjonatka gór, która każde wzniesienie traktuje jak nowe wyzwanie.</p>
-                </div>
-                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                  <div className="w-16 h-16 rounded-full overflow-hidden mb-4 bg-slate-200">
-                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&h=200&fit=crop" alt="Kacper" referrerPolicy="no-referrer" />
-                  </div>
-                  <h4 className="font-bold text-xl mb-1 text-primary-navy">Kacper Mąka</h4>
-                  <p className="text-accent-green font-bold text-xs uppercase mb-3">Koordynator Logistyki</p>
-                  <p className="text-sm text-slate-500">Mistrz planowania i bezpieczeństwa, zawsze gotowy by wspierać grupę na trasie.</p>
+              <div className="relative pt-8">
+                <div className="absolute inset-0 bg-accent-yellow/10 blur-3xl rounded-full scale-110 -z-10" />
+                <div className="rounded-[2rem] overflow-hidden shadow-xl border border-slate-100">
+                  <img 
+                    src="https://web.telegram.org/0439a276-eb4e-4a64-bcbc-8ad89bf96090" 
+                    alt="Veneto Bike Team" 
+                    className="w-full h-auto object-cover"
+                    referrerPolicy="no-referrer"
+                  />
                 </div>
               </div>
             </motion.div>
